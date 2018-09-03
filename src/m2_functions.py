@@ -22,9 +22,10 @@ import rosegraphics as rg
 
 
 def main():
-
     ans = hyp(4,3)
     print(ans)
+
+    turtles()
 
 
 ###############################################################################
@@ -67,6 +68,17 @@ def hyp(long,short):
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+def turtles(color,thickness):
+    window = rg.TurtleWindow()
+
+    bill = rg.SimpleTurtle()
+    joe = rg.SimpleTurtle()
+
+    bill.pen = rg.Pen('green', thickness)
+    joe.pen = rg.Pen(color, 5)
+
+    bill.forward(100)
+    joe.backward(100)
 
 
 ###############################################################################
