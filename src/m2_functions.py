@@ -22,10 +22,12 @@ import rosegraphics as rg
 
 
 def main():
-    ans = hyp(4,3)
+    ans = hyp(4, 3)
     print(ans)
+    color = 'blue'
+    thickness = 8
 
-    turtles(lkj;)
+    turtles(color, thickness)
 
 
 ###############################################################################
@@ -48,7 +50,7 @@ def hyp(long,short):
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -64,11 +66,11 @@ def hyp(long,short):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function and print the returned value,
+# DONE: 4b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-def turtles(color,thickness):
+def turtles(color, thickness):
     window = rg.TurtleWindow()
 
     bill = rg.SimpleTurtle()
@@ -80,10 +82,12 @@ def turtles(color,thickness):
     bill.forward(100)
     joe.backward(100)
 
+    window.close_on_mouse_click()
+
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
