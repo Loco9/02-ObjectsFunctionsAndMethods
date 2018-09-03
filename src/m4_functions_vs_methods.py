@@ -83,6 +83,9 @@ def main():
 
     turtle3('blue', 8)
     try_methods()
+    try_functions()
+
+    try_methods_and_functions()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -210,8 +213,9 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     #
     ###########################################################################
-
-    
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -247,7 +251,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
@@ -255,8 +259,29 @@ def try_methods_and_functions():
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ###########################################################################
+    brain = rg.SimpleTurtle()
+    brain.pen = rg.Pen('blue', 5)
 
+    brain.backward(150)
+    brain.speed = 1
+    draw_many_squares(brain, 2, 100, 30)
 
+    brain.speed = 5
+    brain.pen = rg.Pen('red', 5)
+
+    draw_many_squares(brain, 10, 50, 15)
+
+    brain.speed = 100
+    brain.pen = rg.Pen('red', 35)
+
+    draw_many_squares(brain, 8, 300, 60)
+
+    brain.pen = rg.Pen('black', 3)
+    brain.backward(200)
+
+    brain.draw_circle(30)
+
+    draw_many_squares(brain, 1, 50, 0)
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
