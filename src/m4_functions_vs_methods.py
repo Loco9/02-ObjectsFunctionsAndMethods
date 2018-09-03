@@ -210,6 +210,7 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     #
     ###########################################################################
+
     
 
 def try_methods_and_functions():
